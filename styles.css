@@ -1,0 +1,179 @@
+body,
+input,
+select,
+textarea {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.65;
+}
+
+body {
+    background: #008080;
+    /* Teal background */
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 2em;
+}
+
+header {
+    background-color: #004d4d;
+    /* Dark teal header */
+    color: #fff;
+    padding: 1em 0;
+}
+
+/* START */
+header h1 {
+    margin: 0;
+    data-content: "Katherine Bailey Hines";
+    font-size: 2em;
+    text-align: center;
+}
+@keyframes colorChange {
+    0% {
+      color: white;
+    }
+    50% {
+      color: teal; 
+    }
+    100% {
+      color: white;
+    }
+  }
+  
+  #animated-name {
+    animation: colorChange 3s infinite;
+  }
+
+/* STOP */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main {
+    padding: 2em;
+}
+
+.project-section {
+    margin-bottom: 2em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 1em;
+}
+
+.project {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    height: auto;
+    text-align: center;
+    /* Add this line */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.project h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.project p {
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background: #004d4d;
+    /* Dark teal button color */
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.button:hover {
+    background: #006666;
+    /* Slightly lighter teal on hover */
+}
+
+.contact-links {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-links a:hover {
+    background-color: #006666;
+    /* Slightly lighter teal on hover */
+}
+
+footer {
+    background: #004d4d;
+    /* Dark teal footer */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.icons li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.icons a:hover {
+    color: #bbb;
+}

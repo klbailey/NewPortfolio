@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Katherine Bailey Hines - Portfolio</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 id="animated-name" class="animate__animated animate__fadeIn">Katherine Bailey Hines</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#python">Python</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#htmlcss">CSS/HTML</a></li>
+                    <li><a href="#other">Other</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div id="main">
+
+        <!-- Python Projects Section -->
+        <section id="python" class="project-section">
+            <div class="container">
+                <h2>Python Projects</h2>
+                <!-- Project Grid -->
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project">
+                        <h3>Django</h3>
+                        <!-- Placeholder image -->
+
+                        <!-- <img src="images/project1_thumbnail.jpg" alt="Project 1 Image" onclick="showVideo('videos/CodeWarp.mp4', 'project1-video')"> -->
+                        <!-- Video element (initially hidden) -->
+                        <video width="100%" height="300" controls>
+                            <source src="videos/CodeWarp.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Login and registration with essential fields and data validations. Upon successful login/register, users see an area to create a post as well as prior posts by all users.</p>
+                        <a href="https://github.com/klbailey/Django/tree/main/DJA10" class="button">View Code</a>
+                        <!-- <a href="#" class="button" disabled>Live Preview</a> -->
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project">
+                        <h3>Flask</h3>
+                        <!-- Placeholder image -->
+                        <!-- <img src="images/project2.jpg" alt="Project 2 Image"> -->
+                        <video width="100%" height="300" controls>
+                            <source src="videos/Flask_Blog.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>The app collects user info, stores it, and displays a dynamic newsfeed. Users log in with ease, greeted with a welcome message, and can post on the newsfeed.</p>
+                        <a href="https://github.com/klbailey/Flask/tree/main/FullStackFlaskPracticeONE" class="button">View Code</a>
+                        <!-- <a href="#" class="button" disabled>Live Preview</a> -->
+                        
+                    </div>
+                    <!-- Add more projects as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript Projects -->
+        <section id="javascript" class="project-section">
+            <!-- Similar structure to Python Projects -->
+        </section>
+
+        <!-- CSS/HTML Projects -->
+        <section id="htmlcss" class="project-section">
+            <!-- Similar structure to Python Projects -->
+        </section>
+
+        <!-- Other Projects -->
+        <section id="other" class="project-section">
+            <!-- Similar structure to Python Projects -->
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+                <a href="https://github.com/your-github" target="_blank">GitHub</a>
+                <a href="path/to/your/resume.pdf" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/your-linkedin" class="fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/your-github" class="fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
