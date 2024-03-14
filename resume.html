@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Bailey Hines Portfolio</title>
+
+    <style>
+    .resume-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .resume-section > * {
+        margin-bottom: 20px; /* Add space between each element */
+        display: block; /* Ensure each element is displayed as a block */
+    }
+    .resume-section > :nth-child(-n+4) {
+        text-align: center; /* Center the text for the first 4 child elements */
+    }
+    .resume-section ul {
+        text-align: left; /* Align the bullets to the left */
+    }
+    .resume-section ul {
+        columns: 2; /* Display the list items in two columns */
+        column-gap: 20px; /* Add space between columns */
+        padding-left: 0; /* Remove default left padding */
+    }
+    .resume-section ul.work-experience {
+        list-style-type: none; /* Remove bullets */
+        padding-left: 0; /* Remove default left padding */
+        columns: initial; /* Ensure it's not displayed in columns */
+    }
+    .resume-section ul.work-experience li {
+        margin-bottom: 10px; /* Add space between each work experience */
+    }
+    .resume-section ul.work-experience li strong {
+        display: block; /* Make job titles bold and on separate lines */
+    }
+    .resume-section ul.educational-projects,
+    .resume-section ul.education {
+        columns: initial; /* Ensure it's not displayed in columns */
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 id="animated-name" class="animate__animated animate__fadeIn">Katherine Bailey Hines<br>Full Stack Developer
+        </h1>
+
+        <div class="container">
+            <!-- <h1 id="animated-name" class="animate__animated animate__fadeIn">Katherine Bailey Hines</h1> -->
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Python</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="CSS_HTML.html">CSS/HTML</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/katherine-bailey-hines-011049257/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/klbailey" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://docs.google.com/document/d/1xDgVyjufCwk-sxjG59V8r7HaEpbTyUXi/edit?usp=drive_link&ouid=110263781102401705659&rtpof=true&sd=true"
+                    download>
+                    <i class="fas fa-cloud-download-alt"></i></a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div id="main">
+        <section class="resume-section">
+            <div class="container">
+                <h2>Programmer / Developer / Analyst</h2>
+                <h2><strong>Kathy Bailey Hines</strong></h2>
+                <p>786-562-7070 | klbailey.k@gmail.com</p>
+                <p>Green Valley, AZ 85614</p>
+                <br>
+                <!-- SKILLS -->
+                <p><strong>Skills and Certifications</strong></p>
+                <ul>
+                    <li>JavaScript, HTML, CSS</li>
+                    <li>SQL (SQL Server)</li>
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>Django</li>
+                    <li>Tableau</li>
+                    <li>Excel</li>
+                    <li>Microsoft Power BI</li>
+                    <li>SQL for Data Science Certification</li>
+                    <li>Google Data Analytics Certification</li>
+                    <li>Excel Badics for Data Analysis</li>
+                    <li>Salesforce Certified Associate Certification</li>
+                </ul>
+                <br>
+                <!-- SCHOOL PROJECTS -->
+                <p><strong>Educational Projects</strong></p>
+                <ul class="educational-projects">
+                    <li><strong>DJANGO BLOG</strong> - March 2024</li>
+                    <li>Utilized Python Django to capture user details via form submission with login/registration/blog pages</li>
+                    <li><strong>FLASK BLOG</strong> - February 2024</li>
+                    <li>Utilized Python Flask to capture user details via form submission with login/registration pages</li>
+                    <li><strong>REACT LANDING PAGE</strong> - November 2023</li>
+                    <li>Utilized JavaScript React and bootstrap</li>
+                    <li><strong>LIBRARY</strong> - October 2023</li>
+                    <li>Added the library page to the Admin Dashboard using JavaScript array to store book objects from user input</li>
+                    <li><strong>ADMIN DASHBOARD</strong> - September 2023</li>
+                    <li>Created a full dashboard design utilizing CSS Grid</li>
+                    <li><strong>PYTHON MOVIE LIST WEB SCRAPING</strong> - August 2023</li>
+                    <li>Utilized Python via Beautiful Soup to parse movie list from a website</li>
+                    <li><strong>BELLABEAT CASE STUDY</strong> - June 2023</li>
+                    <li>Utilized SQL via BigQuery to clean data and analyze public databases from Kaggle; visualized data with Tableau</li>
+                    <li><strong>DATA SCIENCE JOB MARKET</strong> - June 2023</li>
+                    <li>Created a dashboard with POWER BI to gain insights into what it takes to land a job in analytics</li>
+                </ul>
+                <br>
+                <!-- WORK EXPERIENCE -->
+                <p><strong>Work Experience</strong></p>
+                <ul class="work-experience">
+                    <li><strong>FLOOD UNDERWRITER I</strong> – Assurant – Scottsdale, AZ – March 2016 - March 2017</li>
+                    <li>Evaluate risks to determine whether risk is rated correctly</li>
+                    <li>Analyze and research/collect pertinent information needed to issue a policy</li>
+                    <li>Responsible for rerating risk to meet company and federal NFIP guidelines</li>
+                    <li><strong>CUSTOMER DEVELOPMENT TEAM</strong> – GoDaddy– Scottsdale, AZ – October 2012 – May 2015</li>
+                    <li>Part of an inside team focused on consulting with and growing the business success of small business customers</li>
+                    <li>Assist customers leverage the power of the internet to expand their online presence and business success</li>
+                    <li>Consultations with customers creating business recommendations and strategies</li>
+                </ul>
+                <!-- EDUCATION -->
+                <p><strong>Education</strong></p>
+                <ul class="education">
+                    <li>BSBA – Hawaii Pacific University – Honolulu, HI – 2003</li>
+                    <li>Computer Information Systems and Management</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- Add footer content if needed -->
+    </footer>
+
+</body>
+
+</html>
