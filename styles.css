@@ -30,7 +30,7 @@ header {
 /* START */
 header h1 {
     margin: 0;
-    data-content: "Katherine Bailey Hines";
+    /* data-content: "Katherine Bailey Hines"; */
     font-size: 2em;
     text-align: center;
 }
@@ -54,6 +54,7 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -67,6 +68,10 @@ nav a {
     font-weight: bold;
 }
 
+nav ul li {
+    display: inline-block;
+    margin-right: 30px; 
+}
 #main {
     padding: 2em;
 }
@@ -176,4 +181,13 @@ footer {
 
 .icons a:hover {
     color: #bbb;
+}
+.social-links {
+    text-align: right;
+}
+.social-links a {
+    color: black; 
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 15px; /* Add spacing between the icons */
 }
