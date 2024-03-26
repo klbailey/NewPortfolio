@@ -10,41 +10,78 @@
     <title>Bailey Hines Portfolio</title>
 
     <style>
-    .resume-section {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .resume-section > * {
-        margin-bottom: 20px; /* Add space between each element */
-        display: block; /* Ensure each element is displayed as a block */
-    }
-    .resume-section > :nth-child(-n+4) {
-        text-align: center; /* Center the text for the first 4 child elements */
-    }
-    .resume-section ul {
-        text-align: left; /* Align the bullets to the left */
-    }
-    .resume-section ul {
-        columns: 2; /* Display the list items in two columns */
-        column-gap: 20px; /* Add space between columns */
-        padding-left: 0; /* Remove default left padding */
-    }
-    .resume-section ul.work-experience {
-        list-style-type: none; /* Remove bullets */
-        padding-left: 0; /* Remove default left padding */
-        columns: initial; /* Ensure it's not displayed in columns */
-    }
-    .resume-section ul.work-experience li {
-        margin-bottom: 10px; /* Add space between each work experience */
-    }
-    .resume-section ul.work-experience li strong {
-        display: block; /* Make job titles bold and on separate lines */
-    }
-    .resume-section ul.educational-projects,
-    .resume-section ul.education {
-        columns: initial; /* Ensure it's not displayed in columns */
-    }
+        .resume-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .resume-section>* {
+            margin-bottom: 20px;
+            /* Add space between each element */
+            display: block;
+            /* Ensure each element is displayed as a block */
+        }
+
+        .resume-section> :nth-child(-n+4) {
+            text-align: center;
+            /* Center the text for the first 4 child elements */
+        }
+
+        .resume-section ul {
+            text-align: left;
+            /* Align the bullets to the left */
+        }
+
+        .resume-section ul {
+            columns: 2;
+            /* Display the list items in two columns */
+            column-gap: 20px;
+            /* Add space between columns */
+            padding-left: 0;
+            /* Remove default left padding */
+        }
+
+        .resume-section ul.work-experience {
+            list-style-type: none;
+            /* Remove bullets */
+            padding-left: 0;
+            /* Remove default left padding */
+            columns: initial;
+            /* Ensure it's not displayed in columns */
+        }
+
+        .resume-section ul.work-experience li {
+            margin-bottom: 10px;
+            /* Add space between each work experience */
+        }
+
+        .resume-section ul.work-experience li strong {
+            display: block;
+            /* Make job titles bold and on separate lines */
+        }
+
+        .resume-section ul.work-experience li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .resume-section ul.work-experience li span {
+            display: block;
+        }
+
+        .resume-section ul.educational-projects,
+        .resume-section ul.education {
+            columns: initial;
+            /* Ensure it's not displayed in columns */
+        }
+
+        .resume-section ul.education li::before {
+            content: '•';
+            /* Add bullet point */
+            margin-right: 8px;
+            /* Adjust spacing between bullet and text */
+        }
     </style>
 </head>
 
@@ -71,7 +108,8 @@
                 <a href="https://www.linkedin.com/in/katherine-bailey-hines-011049257/" target="_blank"><i
                         class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/klbailey" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://docs.google.com/document/d/1CHvHF7sUF9vnFZY8a1b0Lij5VhMCkBAE8aHc5UJVX8Q/edit?usp=drive_link" download>
+                <a href="https://docs.google.com/document/d/1CHvHF7sUF9vnFZY8a1b0Lij5VhMCkBAE8aHc5UJVX8Q/edit?usp=drive_link"
+                    download>
                     <i class="fas fa-cloud-download-alt"></i></a>
 
             </div>
@@ -89,9 +127,12 @@
                 <p>Green Valley, AZ 85614</p>
                 <!-- SUMMARY -->
                 <p><strong>Summary</strong></p>
-                <p>Tech enthusiast with a strong foundation in Python and JavaScript. Motivated to embark on a career as a fullstack developer, 
-                    I am committed to continuous learning and professional growth. With aspirations of attaining a Senior Developer position 
-                    within the next 3-5 years, I am eager to leverage my skills and contribute to the evolving landscape of technology.</p>
+                <p>Tech enthusiast with a strong foundation in Python and JavaScript. Motivated to embark on a career as
+                    a fullstack developer,
+                    I am committed to continuous learning and professional growth. With aspirations of attaining a
+                    Senior Developer position
+                    within the next 3-5 years, I am eager to leverage my skills and contribute to the evolving landscape
+                    of technology.</p>
                 <!-- SKILLS -->
                 <p><strong>Skills and Certifications</strong></p>
                 <ul>
@@ -112,7 +153,8 @@
                 <p><strong>Educational Projects</strong></p>
                 <ul class="educational-projects">
                     <li style="list-style-type: none;"><strong>DJANGO BLOG</strong> - March 2024</li>
-                    <li>Utilized Python Django to capture user details via form submission with login/registration/blog pages</li>
+                    <li>Utilized Python Django to capture user details via form submission with login/registration/blog
+                        pages</li>
                     <li>Developed a dynamic blogging platform to enhance user interaction</li>
                     <li>Designed and implemented a user-friendly login and registration system</li>
                     <li>Ensured secure data input through validation techniques</li>
@@ -120,7 +162,8 @@
                     <li>Experimented with audio integration for enhanced user experience</li>
 
                     <li style="list-style-type: none;"><strong>FLASK BLOG</strong> - February 2024</li>
-                    <li>Utilized Python Flask to capture user details via form submission with login/registration pages</li>
+                    <li>Utilized Python Flask to capture user details via form submission with login/registration pages
+                    </li>
                     <li>Developed a seamless application storing user details and enabling post creation</li>
                     <li>Implemented a dynamic newsfeed and efficient user authentication</li>
                     <li>Provided a warm welcome message upon successful authentication and easy post creation</li>
@@ -134,21 +177,38 @@
                 <!-- WORK EXPERIENCE -->
                 <p><strong>Work Experience</strong></p>
                 <ul class="work-experience">
-                    <li><strong>FLOOD UNDERWRITER I</strong> – Assurant – Scottsdale, AZ – March 2016 - March 2017</li>
+                    <li>
+                        <strong>FLOOD UNDERWRITER I</strong>
+                    </li>
+                    <li>
+                        Assurant – Scottsdale, AZ
+                        <span style="margin-left: auto;">March 2016 - March 2017</span>
+                    </li>
+                    <!-- <li><strong>FLOOD UNDERWRITER I</strong>  Assurant – Scottsdale, AZ <span style="margin-left: auto;">March 2016 - March 2017</span></li> -->
                     <li>Evaluate risks to determine whether risk is rated correctly</li>
                     <li>Analyze and research/collect pertinent information needed to issue a policy</li>
                     <li>Responsible for rerating risk to meet company and federal NFIP guidelines</li>
-                    <li><strong>CUSTOMER DEVELOPMENT TEAM</strong> – GoDaddy– Scottsdale, AZ – October 2012 – May 2015</li>
-                    <li>Part of an inside team focused on consulting with and growing the business success of small business customers</li>
-                    <li>Assist customers leverage the power of the internet to expand their online presence and business success</li>
+                    <li style="display: flex; justify-content: space-between;">
+                        <strong>CUSTOMER DEVELOPMENT TEAM</strong>
+                    </li>
+                    <li style="display: flex; justify-content: space-between;">
+                        <span>GoDaddy - Scottsdale, AZ</span>
+                        <span style="margin-left: auto;">October 2012 - May 2015</span>
+                    </li>
+                    <li>Part of an inside team focused on consulting with and growing the business success of small
+                        business customers</li>
+                    <li>Assist customers leverage the power of the internet to expand their online presence and business
+                        success</li>
                     <li>Consultations with customers creating business recommendations and strategies</li>
                 </ul>
                 <!-- EDUCATION -->
                 <p><strong>Education</strong></p>
                 <ul class="education">
-                    <li>Skillspire – Full Stack Development Python –  2024</li>
-                    <li>BSBA – Hawaii Pacific University – Honolulu, HI – 2003</li>
-                    <li style="list-style-type: none;">Computer Information Systems and Management</li>
+                    <li style="display: flex; justify-content: space-between;">Full Stack Development Python –
+                        Skillspire <span style="margin-left: auto;">2024</span></li>
+                    <li style="display: flex; justify-content: space-between;">BSBA – Hawaii Pacific University –
+                        Computer Information Systems and Management<span style="margin-left: auto;">2003</span></li>
+
                 </ul>
             </div>
         </section>
